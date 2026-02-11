@@ -149,11 +149,11 @@ label {
 .birthday {
     display: flex;
     gap: 12px;
-    max-width: 540px;
 }
 
 .birthday input {
     flex: 1;
+    min-width: 0;
     padding: 18px 15px;
     border-radius: 8px;
     border: 1px solid #e0e0e0;
@@ -162,15 +162,6 @@ label {
     outline: none;
     transition: border-color 0.3s;
     background: #fff;
-}
-
-.birthday input:nth-child(1),
-.birthday input:nth-child(2) {
-    max-width: 90px;
-}
-
-.birthday input:nth-child(3) {
-    max-width: 130px;
 }
 
 .birthday input::placeholder {
@@ -297,9 +288,5 @@ label {
         width: 100%;
         height: auto;
         min-height: 100vh;
-    }
-    
-    .birthday {
-        max-width: 100%;
     }
 }
