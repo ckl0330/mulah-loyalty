@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mulah Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="phone-frame">
+
+    <div class="logo">MULAH</div>
+
+    <h2 class="register-title">Registration</h2>
+    <p class="subtitle2">Please fill up your details.</p>
+
+    <div class="form-group">
+        <label>Name</label>
+        <input class="text-input" type="text" id="name" placeholder="Enter Name">
+        <small class="error" id="nameError">*Please insert a name.</small>
+    </div>
+
+    <div class="form-group">
+        <label>Birthday</label>
+        <div class="birthday">
+            <input type="text" placeholder="DD" id="dd" maxlength="2">
+            <input type="text" placeholder="MM" id="mm" maxlength="2">
+            <input type="text" placeholder="YYYY" id="yyyy" maxlength="4">
+        </div>
+        <small class="error" id="birthdayError">*Please insert your birthday.</small>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input class="text-input" type="email" id="email" placeholder="Email Address">
+        <small class="error" id="emailError">*Please insert a valid email address.</small>
+        
+        <div class="checkbox">
+            <input type="checkbox" id="noEmail"> <label for="noEmail" class="checkbox-label">No email address</label>
+        </div>
+    </div>
+
+    <button class="main-btn" onclick="saveDetails()">Continue</button>
+
+    <div class="footer-line"></div>
+    <div class="footer">
+        Powered by <span>MulahRewards.com</span>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

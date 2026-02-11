@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.phone-frame {
+    width: 640px;
+    height: 1136px;
+    background: #fff;
+    padding: 80px 50px 40px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    text-align: center;
+    color: #f58220;
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 6px;
+    margin-bottom: 60px;
+}
+
+.welcome {
+    font-size: 64px;
+    color: #888;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.subtitle {
+    color: #f58220;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.subtitle2 {
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.register-title {
+    font-size: 44px;
+    color: #888;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.info-title {
+    font-size: 44px;
+    color: #888;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Phone Input Styling */
+.phone-input-wrapper {
+    margin-bottom: 60px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f58220;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.country-code {
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    color: #333;
+    padding-right: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.phone-input input {
+    border: none;
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #999;
+    outline: none;
+    background: transparent;
+}
+
+.phone-input input::placeholder {
+    color: #ccc;
+}
+
+.check-icon {
+    color: #ccc;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.text-input {
+    width: 100%;
+    padding: 18px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: #fff;
+}
+
+.text-input::placeholder {
+    color: #ccc;
+}
+
+.text-input:focus {
+    border-color: #f58220;
+}
+
+.birthday {
+    display: flex;
+    gap: 12px;
+    max-width: 540px;
+}
+
+.birthday input {
+    flex: 1;
+    padding: 18px 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s;
+    background: #fff;
+}
+
+.birthday input:nth-child(1),
+.birthday input:nth-child(2) {
+    max-width: 90px;
+}
+
+.birthday input:nth-child(3) {
+    max-width: 130px;
+}
+
+.birthday input::placeholder {
+    color: #ccc;
+}
+
+.birthday input:focus {
+    border-color: #f58220;
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 13px;
+    display: none;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.checkbox {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-size: 13px;
+    color: #999;
+    font-weight: normal;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Button Styling */
+.main-btn {
+    width: 100%;
+    background: #f58220;
+    color: white;
+    padding: 22px;
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.main-btn:hover {
+    background: #e67316;
+}
+
+.main-btn:active {
+    transform: scale(0.98);
+}
+
+/* Footer Line */
+.footer-line {
+    position: absolute;
+    bottom: 90px;
+    left: 50px;
+    right: 50px;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+/* Footer Styling */
+.footer {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #bbb;
+    font-size: 14px;
+}
+
+.footer span {
+    color: #3c7edb;
+    font-weight: 500;
+}
+
+/* Page 3 Info Display Styling */
+.info-container {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-value {
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 680px) {
+    .phone-frame {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .birthday {
+        max-width: 100%;
+    }
+}
