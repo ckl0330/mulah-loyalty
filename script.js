@@ -96,7 +96,7 @@ function goBack() {
     // Clear localStorage if desired
     if (confirm("Do you want to clear your data and return to the home page?")) {
         localStorage.clear();
-        window.location.href = "page1.html";
+        window.location.href = "index.html";
     }
 }
 
@@ -151,4 +151,5 @@ if (document.getElementById("dd")) {
             this.value = this.value.replace(/\D/g, '');
         });
     });
+
 }
